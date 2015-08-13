@@ -27,7 +27,7 @@ app.use(function(req, res) {
  * Socket.io stuff.
  */
 var server = require('http').createServer(app);
-var io = require('socket.io')(server);
+var io     = require('socket.io')(server);
 var onlineUsers = 0;
 
 io.sockets.on('connection', function(socket) {
